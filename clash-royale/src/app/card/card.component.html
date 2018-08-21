@@ -1,0 +1,31 @@
+<app-layout>
+  <div class="container" style="margin-top: 60px;">
+    <h1>Cards</h1>
+    <p>
+      All Cards.
+    </p>
+
+    <div class="row">
+      <div class="col-sm-2" *ngFor="let card of cards">
+        <br>
+        <div class="card">
+          <div class="card-block">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body" style="height: 200px;">
+              <h5 class="card-title">{{ card.name }}</h5>
+              <p class="card-text" style="font-size: 8pt;">{{ card.description }}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted" style="font-size: 7.5pt;">
+                  <img src="/assets/images/card/elixir.png" alt="Elixir" width="10" height="10">
+                  {{ card.elixir }} | 
+                  <b>{{ card.type }}</b> - <b>{{ card.rarity }}</b>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</app-layout>
