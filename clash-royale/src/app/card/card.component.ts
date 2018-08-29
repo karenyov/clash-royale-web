@@ -23,4 +23,8 @@ export class CardComponent implements OnInit {
     );
   }
 
+  trackByCards(index, item) {
+    return index;
+  }
+
 }
